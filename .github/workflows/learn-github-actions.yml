@@ -1,8 +1,8 @@
 name: learn-github-actions
 on:
   push:
-  paths-ignore:
-      - 'workflow/**'
+    paths:
+      - '!workflow/**'
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
