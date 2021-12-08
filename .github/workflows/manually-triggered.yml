@@ -20,3 +20,8 @@ jobs:
           echo "- in ${{ github.event.inputs.home }}!"
           echo "job ${{ toJSON(job) }}"
           echo "runner ${{ toJSON(runner) }}"
+  say_goodbye:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Goodbye"
