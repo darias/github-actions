@@ -2,6 +2,7 @@ name: learn-github-actions
 on:
   push:
     paths:
+      - 'data/**'
       - '!workflow/**'
 jobs:
   check-bats-version:
